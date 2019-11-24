@@ -1,0 +1,14 @@
+A - run on all data.
+->converged into 16% prformance, equal to the prior of most frequent category (POLITICS)
+
+B - We moved to 3 categories with similar weights.
+ (categories == 'RELIGION')  | (categories == 'SCIENCE')  | (categories == 'TASTE')
+converged to  ~77%
+linear model showed similar results
+
+C - We added a layer of soft-max before final prediction (insted of 'free' linear results)
+passing 90% fast
+
+D - we added 4th category with much higher prob (categories == 'PARENTING') to see that we do not converge into the prior.
+we got 80% for test and 85% for train
+
